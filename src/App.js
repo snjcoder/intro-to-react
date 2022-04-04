@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-import { NavBar } from './NavBar';
+import logo from "./logo.svg";
+import { useState } from "react";
+import "./App.css";
+import { NavBar } from "./NavBar";
 
-function App() {
+function App(props) {
+  const [count, setCount] = useState(4);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <h1>Hello C8!{count}</h1>
+      <button
+      onClick={() => {
+        setCount((curr) => {return curr +1});
+      }}
         >
-          Learn React
-        </a>
-      </header>
+          PLUS ONE
+          </button>     
     </div>
   );
 }
