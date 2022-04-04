@@ -1,7 +1,7 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import { useState } from "react";
 import "./App.css";
-import { NavBar } from "./NavBar";
+// import { NavBar } from "./NavBar";
 import Displayer from "./components/Displayer";
 import Adder from "./components/Adder";
 
@@ -19,7 +19,7 @@ function App(props) {
           PLUS ONE
           </button> 
           <Displayer value={count2}/> 
-          <Adder/>   
+          <Adder theFuction={setCount2}/>   
     </div>
   );
 }
