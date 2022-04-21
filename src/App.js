@@ -1,31 +1,17 @@
-// import logo from "./logo.svg";
-import { useState } from "react";
-import "./App.css";
-// import { NavBar } from "./NavBar";
-import Displayer from "./components/Displayer";
-import Adder from "./components/Adder";
+import React from "react";
+import FormInput from "./components/forminput/formInput.css";
 
-function App(props) {
-  const [count, setCount] = useState(10);
-  const [count2, setCount2] = useState(6);
+const App = () => {
   return (
-    <div>
-      <h1>Hello C8!{count}</h1>
-      <button
-      onClick={() => {
-        setCount(count +1)
-        setCount((curr) => {return curr +1});
-      }}
-        >
-          PLUS ONE
-          </button> 
-          <pre>
-          <Displayer value={count2}/> 
-
-          </pre>
-          <Adder theFuction={setCount2}/>   
+    <div className="app">
+      <form>
+        <FormInput  place/>
+        <FormInput />
+        <FormInput />
+        <FormInput />
+      </form>
     </div>
   );
-}
+};
 
 export default App;
