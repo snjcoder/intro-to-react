@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import Form from "./components/Signup/Form";
+import ModalDialog from "./components/Signup/ModalDialog";
 
 function App() {
   return (
     <div>
-      <Form />
+      <ModalDialog />
     </div>
   );
 }

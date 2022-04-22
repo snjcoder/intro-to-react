@@ -37,6 +37,7 @@ const Form = ({ handleClose }) => {
 
   return (
     <form className={classes.root} onSubmit={handleSubmit}>
+      <input Register Now/>
       <TextField
         label="First Name"
         variant="filled"
